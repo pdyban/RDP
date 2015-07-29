@@ -9,7 +9,7 @@ def distance(a, b):
     return  sqrt((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2)
 
 def point_line_distance(point, start, end):
-    if ((start == end).all()):
+    if (start == end):
         return distance(point, start)
     else:
         n = abs(
